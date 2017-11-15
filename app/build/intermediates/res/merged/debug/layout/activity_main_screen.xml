@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:screenOrientation="landscape"
+    tools:context="com.optometry.plymouth.mrda.MainScreen">
+
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:text="@string/welcome_text"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="top|center" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_layout"
+            android:layout_gravity="center">
+
+            <Button
+                android:text="Start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:text="Options"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnOptions"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</FrameLayout>
